@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
-import { ThemeContext, themes } from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/components/Button/ThemeContext.js'
+import { ThemeContext, themes } from './ThemeContext'
 
 export default () => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
