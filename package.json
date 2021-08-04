@@ -40,11 +40,13 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
     "frontend": "react-scripts start",
     "backend": "nodemon backend.js",
     "start": "node backend.js",
     "build": "react-scripts build"
+   
   },
   "eslintConfig": {
     "extends": [
