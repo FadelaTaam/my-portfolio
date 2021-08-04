@@ -1,38 +1,207 @@
-.App {
+header{
+  background: url("");
+  height: 520px;
+  width: 100%;
+  padding-top: 150px;
+  background-color: #efe1bd;
+  background-size: cover;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #efe1bd;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav ul li {
+  display: inline;
+  padding: 50px;
+  font-size: 25px;
+ } 
+ ::marker {
+  text-decoration: none;
+ }
+a {
+  text-decoration: none;
+  color: black;
+}
+svg.iconify.header-icon {
+  height: 150px;
+  width: 150px;
+};
+Button.switch {
+  background: black
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font-trebuchet {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+section#about {
+  background-color: white;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+div.col-md12 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;;
+}
+div.card {
+  display: inline-block;
+  margin: 55px 75px 30px;
+	padding: 15px 15px 30px;
+	text-align: center;
+	text-decoration: none;
+  border-radius: .25rem;
+  background-color: #fff;
+  position: relative;
+}
+i.devicon-github-original {
+  height: 50px;
+  width: 50px;
+}
+svg#linkedin {
+  height: 50px;
+  width: 50px;
+}
+svg#email {
+  height: 50px;
+  width: 50px;
+}
+div.vertical-timeline {
+text-align: center;
+}
+div#img {
+  tab-size: 30;
+  padding-left: 50px;
+}
+div#popImage {
+  padding-left: 40px;
+}
+div.polaroid {
+  background-color:#ffffff;
+  padding-left: 0px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.polaroid a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+}
+
+.polaroid a:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+
+.polaroid img {
+  display: block;
+  width: 250px;
+}
+
+.polaroid a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+div#skills {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  justify-content: space-around;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+  background: #1f1f1f;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10%;
 
-.App-link {
-  color: #61dafb;
+  
 }
+div#Footer {
+  display: flex;
+    justify-content:center;
+    align-items:center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+  background: #1f1f1f;
+  width: 100%;
+  padding-bottom: 10%;
+}
+div#TypeAnimation {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  min-height: 40px;
+  width: 100%;
+  height : 150px;
+  overflow: hidden;
+  padding-bottom: 10%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+h1 {
+  font-size: 250%;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium","Arial Narrow",Arial,sans-serif;
+  width: 100%;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+h4 {
+  font-family:'Courier New', Courier, monospace;
+  font-size:xx-large;
+  text-align: center;
+}
+h3 {
+  font-family:'Courier New', Courier, monospace;
+  font-size:xx-large;
+  text-align: center;
+}
+h5 {
+  font-family: "Raleway",sans-serif;
+  font-size: 200%;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+  
+}
+a {
+  color: #fff;
 }
