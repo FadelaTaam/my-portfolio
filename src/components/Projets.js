@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import {Card, CardGroup} from 'react-bootstrap';
-import Img from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/img/TMDB.png';
-import Portfolio from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/img/Portfolio.png'
-import HealthyApp from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/img/HealthyApp.png'
+import Img from './img/TMDB.png';
+import Portfolio from './img/Portfolio.png'
+import HealthyApp from './img/HealthyApp.png'
 
 class Projets extends Component {
     render() {

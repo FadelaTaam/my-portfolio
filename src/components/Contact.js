@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import{ Component } from 'react';
 // npm install --save-dev @iconify/react @iconify-icons/icon-park
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 // npm install --save-dev @iconify/react @iconify-icons/simple-icons
 import linkedinIcon from '@iconify-icons/simple-icons/linkedin';
 // npm install --save-dev @iconify/react @iconify-icons/ic

@@ -11,11 +11,9 @@ import Footer from './components/Footer/Footer';
 import ButtonDark from './components/Button/ButtonDark';
 import Polaroid from './components/polaroid'
 import Typo from './components/Typography';
-import { ThemeContext, themes } from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/components/Button/ThemeContext.js'
 import { Icon } from '@iconify/react';
 import laptopCode from '@iconify-icons/la/laptop-code';
 import GithubCorner from 'react-github-corner';
-import { Typography } from '@material-ui/core';
 import TypeAnimation from './components/TypeAnimation.js'
 
 class App extends React.Component {

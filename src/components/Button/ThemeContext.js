@@ -1,4 +1,4 @@
-import React, { useContext}  from 'react'
+import React  from 'react'
 
 export const themes = { // contient les données stockées et leurs valeurs
   light: {
