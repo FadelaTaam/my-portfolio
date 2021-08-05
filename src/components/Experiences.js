@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import WorkIcon from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/img/work.png';
-import SchoolIcon from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/img/school.png';
+
 
 class Experiences extends Component {
     render() {

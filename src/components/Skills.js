@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import styled from 'styled-components'
+import { Component } from 'react';
 import { HtmlFive2 } from '@styled-icons/icomoon';
 import { Css3Alt } from '@styled-icons/fa-brands/Css3Alt';
 import { ReactLogo } from '@styled-icons/boxicons-logos/ReactLogo'

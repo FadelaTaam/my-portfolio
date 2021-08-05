@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MaPhoto from '/Users/fadela/Desktop/stage/Portfolio/portfolio/src/img/moi.png'
+import MaPhoto from './img/moi.png'
 
 const Polaroid = () => {
     return (

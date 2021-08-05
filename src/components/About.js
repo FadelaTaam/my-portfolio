@@ -8,7 +8,6 @@ import yellowCircle from '@iconify-icons/twemoji/yellow-circle';
 import greenCircle from '@iconify-icons/openmoji/green-circle';
 // npm install --save-dev @iconify/react @iconify-icons/gg
 import helloIcon from '@iconify-icons/gg/hello';
-import GlitchClip from 'react-glitch-effect/core/GlitchClip';
 
 const About = () => {
 
@@ -17,7 +16,7 @@ const About = () => {
         <section id='about'>
             <div id='Screen' class='col-md-12'>
                 <h3>A propos de moi </h3>
-                <GlitchClip onHover={false}>
+                
                     <div className="col-md-8">
                         <div className="col-md-10">
                             <div className="card">
@@ -43,7 +42,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                </GlitchClip>
+                
             </div>
         </section>
     );

@@ -11,7 +11,6 @@ import Footer from './components/Footer/Footer';
 import ButtonDark from './components/Button/ButtonDark';
 import Polaroid from './components/polaroid'
 import Typo from './components/Typography';
-import { Icon } from '@iconify/react';
 
 import GithubCorner from 'react-github-corner';
 import TypeAnimation from './components/TypeAnimation.js'

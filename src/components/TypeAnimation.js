@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 class   Animation extends Component {
      render() {
