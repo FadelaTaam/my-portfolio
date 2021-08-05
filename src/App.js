@@ -12,7 +12,7 @@ import ButtonDark from './components/Button/ButtonDark';
 import Polaroid from './components/polaroid'
 import Typo from './components/Typography';
 import { Icon } from '@iconify/react';
-import laptopCode from '@iconify-icons/la/laptop-code';
+
 import GithubCorner from 'react-github-corner';
 import TypeAnimation from './components/TypeAnimation.js'
 
@@ -24,7 +24,7 @@ class App extends React.Component {
         <header>
           <GithubCorner href="https://github.com/FadelaTaam/" />
           <div>
-            <Icon icon={laptopCode} class='iconify header-icon' />
+            
             <h1 class="mb-0">
               <p> Taam Fadela
               </p>
@@ -42,7 +42,6 @@ class App extends React.Component {
 
         <div>
           <nav >
-           { /*<Photo></Photo>*/}
             <ul>
               <li><Link to="/">Accueil</Link></li>
               <li><Link to="/contact">Contact</Link></li>
