@@ -22,8 +22,7 @@ class App extends React.Component {
       <BrowserRouter>
         <header>
           <GithubCorner href="https://github.com/FadelaTaam/" />
-          <div>
-            
+          <div> 
             <h1 class="mb-0">
               <p> Taam Fadela
               </p>
