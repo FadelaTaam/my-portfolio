@@ -11,7 +11,7 @@ import helloIcon from '@iconify-icons/gg/hello';
 
 const About = () => {
 
-    let presentation = ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris elit, imperdiet egestas scelerisque eu, mattis vitae tortor. Sed a enim tempus, venenatis enim non, imperdiet nisi,Aenean eget mi quis quam feugiat mollis. Donec iaculis dolor eget lacus pellentesque, in venenatis purus maximus.'
+    let presentation = "Bonjour, Je m'appelle Fadela. Après 10 années d'expérience dans le secteur commercial, mon appétence pour le numérique m'a amenée tout naturellement à une reconversion professionnelle pour devenir développeuse Web full stack. Ma passion pour les nouvelles technologies que je pratique en autodidacte et ma motivation m'ont permis d'accéder à une formation riche et intense dispensée par Social Builder et l'organisme de formation Konexio. Aujourd'hui je suis à la recherche d'un stage pour parfaire mon apprentissage, je serai honorée de rejoindre votre société."
     return (
         <section id='about'>
             <div id='Screen' class='col-md-12'>
@@ -36,7 +36,7 @@ const About = () => {
                                     <br />
                                     <span>{<Icon icon={helloIcon} />}</span>
                                     <br />
-                                    {"Présentation de ma personne", presentation}
+                                    { presentation}
                                 </div>
 
                             </div>

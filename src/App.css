@@ -31,15 +31,16 @@ a {
   text-decoration: none;
   color: black;
 }
-svg.iconify.header-icon {
-  height: 150px;
-  width: 150px;
-};
+div#flags {
+  display: flex;
+  justify-content:left;
+  
+  padding-left: 30px;
+}
 Button.switch {
   background: black
   
 }
-
 .font-trebuchet {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -133,19 +134,15 @@ div.polaroid {
 }
 div#skills {
   display: flex;
-  justify-content: center;
   justify-content: space-around;
-  color: #fff;
+  align-items:baseline;
   margin-top: 40px;
   margin-bottom: 40px;
-  
+  color: #fff;
   background: #1f1f1f;
-  min-height: 200px;
   width: 100%;
-  overflow: hidden;
+  height: 60px;
   padding-bottom: 10%;
-
-  
 }
 div#Footer {
   display: flex;

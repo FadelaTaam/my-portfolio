@@ -14,6 +14,7 @@ import Typo from './components/Typography';
 
 import GithubCorner from 'react-github-corner';
 import TypeAnimation from './components/TypeAnimation.js'
+import ReactCountryFlag from "react-country-flag"
 
 class App extends React.Component {
   
@@ -22,7 +23,30 @@ class App extends React.Component {
       <BrowserRouter>
         <header>
           <GithubCorner href="https://github.com/FadelaTaam/" />
+          
+          <div id="flags">
+           
+            <ReactCountryFlag
+                countryCode="FR"
+                svg
+                style={{
+                    width: '2em',
+                    height: '2em',
+                }}
+                title="Français"
+            />
+            <ReactCountryFlag
+                countryCode="GB"
+                svg
+                style={{
+                    width: '2em',
+                    height: '2em',
+                }}
+                title="English"
+            />
+        </div>
           <div> 
+          <span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150"></span>
             <h1 class="mb-0">
               <p> Taam Fadela
               </p>
