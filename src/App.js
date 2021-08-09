@@ -65,8 +65,8 @@ class App extends React.Component {
         <div>
           <nav >
             <ul>
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li ><Link id="navText" to="/">Accueil</Link></li>
+              <li ><Link id="navText" to="/contact">Contact</Link></li>
             </ul>
           </nav>
           <Switch>
