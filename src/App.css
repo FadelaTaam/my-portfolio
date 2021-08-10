@@ -27,15 +27,33 @@ nav ul li {
  ::marker {
   text-decoration: none;
  }
+ a::after {
+  font-family: "monoton";
+  font-style: italic;
+ }
+ li {
+   text-decoration: none;
+ }
 a {
   text-decoration: none;
   color: black;
+}
+a#footerIcon {
+  text-decoration: none;
+  color: white;
+}
+p {
+  font-family: "monoton";
+}
+li#experience {
+  font-family: "monoton";
 }
 a#navText {
   color:black;
   text-decoration: none;
   font-family: "monoton";
-  font-weight: 600;
+  font-weight: 400;
+  font-style: italic;
 }
 div#flags {
   display: flex;
@@ -47,7 +65,7 @@ Button.switch {
   
 }
 .font-trebuchet {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family:  "monoton";
 }
 section#about {
   background-color: white;
@@ -58,16 +76,18 @@ div.col-md12 {
     justify-content: center;
     align-items: center;
     padding-left: 100px;;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 div.card {
   display: inline-block;
-  margin: 55px 75px 30px;
-	padding: 15px 15px 30px;
+  margin: 50px 20px 20px;
+	padding: 20px 20px 30px;
 	text-align: center;
 	text-decoration: none;
   border-radius: .25rem;
   background-color: #fff;
   position: relative;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 svg#github.iconify.iconify--codicon {
   height: 50px;
@@ -137,6 +157,13 @@ div.polaroid {
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 }
+div#popAbout {
+  
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
 div#skills{
   
   margin-top: 20px;
@@ -182,6 +209,70 @@ i.devicon-mysql-plain {
 i.devicon-mongodb-plain {
   font-size: 4rem;
 }
+div#html {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#css {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#javascript {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#react {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#jquery {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#bootstrap {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#mysql {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+div#mongodb {
+  background-color: rgba(248,245,244,.05);
+  padding: 10px 10px 5px;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 8px;
+    text-align: center;
+}
 div#Footer {
   
   margin-top: 20px;
@@ -220,26 +311,28 @@ div#TypeAnimation {
 }
 h1 {
   font-size: 250%;
-  font-weight: 600;
+  font-weight: 800;
   font-family: "monoton";
   width: 100%;
   
-
 }
-h4 {
-  font-family:'Courier New', Courier, monospace;
-  font-size:xx-large;
-  text-align: center;
+h2 {
+  font-family: 'Courier New';
+    font-size: 100%;
+    
 }
 h3 {
   font-family:'Courier New', Courier, monospace;
   font-size:xx-large;
   text-align: center;
 }
-h5 {
-  font-family: "monoton";
-  font-size: 200%;
+h4 {
+  font-family:'Courier New', Courier, monospace;
+  font-size:xx-large;
+  text-align: center;
 }
+
+
 li {
   text-decoration: none;
   list-style-type: none;

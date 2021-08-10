@@ -8,7 +8,7 @@ class Typo extends Component {
 
             <TextAnimation>
                 <main>
-                    <h5>Développeuse web & mobile Fullstack Junior</h5>
+                    <h2>Développeuse web & mobile Fullstack Junior</h2>
                 </main>
             </TextAnimation>
         )

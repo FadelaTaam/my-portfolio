@@ -14,22 +14,23 @@ class Experiences extends Component {
                     iconStyle={{ background: 'black', color: '#fff' }}
                     icon={<WorkIcon />}
                 >
-                    <p>De Septembre à ∞ Mon futur stage dans votre entreprise </p>
+                    <p>De Septembre à ∞
+                        <br />Mon futur stage dans votre entreprise </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'black', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(174, 148, 79)', color: '#fff' }}
                     icon={<StarIcon />}
                 >
                     <p>Formation Social Builder & Konexio</p>
                     <ul>
-                        <li>Html & Css</li>
-                        <li>Javascript</li>
-                        <li>Jquery</li>
-                        <li>React & react native</li>
-                        <li>Node Js</li>
-                        <li>MongoDB</li>
-                        <li>Heroku</li>
+                        <li id='experience'>Html & CSS </li>
+                        <li id='experience'>Javascript </li>
+                        <li id='experience'>Jquery</li>
+                        <li id='experience'>React & react native</li>
+                        <li id='experience'>Node Js</li>
+                        <li id='experience'>MongoDB</li>
+                        <li id='experience'>Heroku</li>
                     </ul>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

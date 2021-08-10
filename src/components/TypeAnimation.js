@@ -5,7 +5,7 @@ class   Animation extends Component {
     return (
         <div className='App'>
           <h5
-            style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}
+            style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal', fontSize: '40px' }}
           >
             J'aime {' '}
             <span style={{ color: 'white', fontWeight: 'bold', justifyItems: 'center' }}>

@@ -85,7 +85,7 @@ function App() {
 
           <div>
             <nav >
-              <ul>
+              <ul id='nav'>
                 <li ><Link id="navText" to="/">Accueil</Link></li>
                 <li ><Link id="navText" to="/contact">Contact</Link></li>
               </ul>

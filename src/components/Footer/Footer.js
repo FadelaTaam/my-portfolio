@@ -21,15 +21,15 @@ class contact extends Component {
                 <row id='Footer'>
                     <div>
                     <span id='github' class="iconify" data-icon="codicon:github"></span>
-                        <li><a href="https://github.com/FadelaTaam" target="_blank">Github</a></li>
+                        <li><a id='footerIcon' href="https://github.com/FadelaTaam" target="_blank">Github</a></li>
                     </div>
                     <div>
                         <Icon id='linkedin' icon={linkedinIcon} />
-                        <li><a href="https://linkedin.com/in/fadela-taam-447444135"target="_blank">Linkedin</a></li>
+                        <li><a id='footerIcon' href="https://linkedin.com/in/fadela-taam-447444135"target="_blank">Linkedin</a></li>
                     </div>
                     <div>
                         <Icon id='email' icon={baselineAlternateEmail} />
-                        <li><a href="/contact" target="_blank">Email</a></li>
+                        <li><a id='footerIcon' href="/contact" target="_blank">Email</a></li>
                     </div>
                 </row>
                 </div>
