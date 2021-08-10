@@ -64,7 +64,7 @@ function App() {
 
 
         <div>
-          {/*<span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150"></span>*/}
+          <span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150"></span>
           <h1 class="mb-0">
             <p> Taam Fadela
             </p>
@@ -104,7 +104,6 @@ function App() {
             <About></About>
           </div>
         </div>
-
       </section>
 
       <Projets></Projets>
