@@ -24,7 +24,7 @@ function App() {
   const { t, i18n } = useTranslation();
 
   const handleclick = lang => {
-i18n.changeLanguage(lang)
+    i18n.changeLanguage(lang)
   }
 
   return (
@@ -53,11 +53,11 @@ i18n.changeLanguage(lang)
             title="English"
           />
 
-<p>
-  {t("header.0")}
-</p>
-<button onClick={() => handleclick('fr')}>Français</button>
-<button onClick={() => handleclick('en')}>English</button>
+          <p>
+            {t("header.0")}
+          </p>
+          <button onClick={() => handleclick('fr')}>Français</button>
+          <button onClick={() => handleclick('en')}>English</button>
 
 
         </div>
@@ -109,9 +109,9 @@ i18n.changeLanguage(lang)
 
       <Projets></Projets>
       <Skills>
-      <p>
-  {t("skills.0")}
-</p>
+        <p>
+          {t("header.1")}
+        </p>
       </Skills>
       <Experiences></Experiences>
       <div id='TypeAnimation'>
