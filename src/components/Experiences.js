@@ -11,14 +11,14 @@ class Experiences extends Component {
             <h3>EXPERIENCES</h3>
             <VerticalTimeline>
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'black', color: '#fff' }}
                     icon={<WorkIcon />}
                 >
                     <p>De Septembre à ∞ Mon futur stage dans votre entreprise </p>
                 </VerticalTimelineElement>
 
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'black', color: '#fff' }}
                     icon={<StarIcon />}
                 >
                     <p>Formation Social Builder & Konexio</p>
@@ -33,14 +33,14 @@ class Experiences extends Component {
                     </ul>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'black', color: '#fff' }}
                     icon={<SchoolIcon />}
                 >
                     <p>LEA (Langues Etrangères Appliqués)</p>
                     <p>Université Paris 13</p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                    iconStyle={{ background: 'black', color: '#fff' }}
                     icon={<SchoolIcon />}
                 >
                     <i class="fas fa-hourglass-start mx-auto experience-icon"></i>
