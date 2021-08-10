@@ -14,9 +14,8 @@ const About = () => {
     let presentation = "Bonjour, Je m'appelle Fadela. Après 10 années d'expérience dans le secteur commercial, mon appétence pour le numérique m'a amenée tout naturellement à une reconversion professionnelle pour devenir développeuse Web full stack. Ma passion pour les nouvelles technologies que je pratique en autodidacte et ma motivation m'ont permis d'accéder à une formation riche et intense dispensée par Social Builder et l'organisme de formation Konexio. Aujourd'hui je suis à la recherche d'un stage pour parfaire mon apprentissage, je serai honorée de rejoindre votre société."
     return (
         <section id='about'>
+            <h3>A propos de moi </h3>
             <div id='Screen' class='col-md-12'>
-                <h3>A propos de moi </h3>
-                
                     <div className="col-md-8">
                         <div className="col-md-10">
                             <div className="card">

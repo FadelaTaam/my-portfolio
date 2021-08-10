@@ -4,37 +4,53 @@ class Skills extends Component {
     render() {
         return (
             <div id='skills'>
-                <row>
+                <div>
                     <h4>Compétences</h4>
-                    <div id='html'>
-                        <i class="devicon-html5-plain" size={{ size: '48' }}></i>
-                        <p class="text-center">HTML 5</p>
-                    </div>
-                    <div id='css'>
-                        <i class="devicon-css3-plain"></i>
-                        <p class="text-center">CSS</p>
-                    </div>
-                    <div id='javascript'>
-                        <i class="devicon-javascript-plain"></i>
-                        <p class="text-center">Javascript</p>
-                    </div>
-                    <div id='react'>
-                        <i class="devicon-react-original-wordmark"></i>
-                    </div>
-                    <div id='jquery'>
-                        <i class="devicon-jquery-plain-wordmark"></i>
-                    </div>
-                    <div id='bootstrap'>
-                        <i class="devicon-bootstrap-plain-wordmark"></i>
-                    </div>
-                    <div id='mysql'>
-                        <i class="devicon-mysql-plain"></i>
-                    </div>
-                    <div id='mongodb'>
-                        <i class="devicon-mongodb-plain-wordmark"></i>
-                    </div>
+                    <h4>---------------</h4>
+                </div>
+                <div>
+                    <row id='skills'>
 
-                </row>
+                        <div id='html'>
+                            <i class="devicon-html5-plain"></i>
+                            <p class="text-center">HTML 5</p>
+                        </div>
+                        <div id='css'>
+                            <i class="devicon-css3-plain"></i>
+                            <p class="text-center">CSS</p>
+                        </div>
+                        <div id='javascript'>
+                            <i class="devicon-javascript-plain"></i>
+                            <p class="text-center">Javascript</p>
+                        </div>
+                        <div id='react'>
+                        <i class="devicon-react-original"></i>
+                            <p class="text-center">React</p>
+
+                        </div>
+                        <div id='jquery'>
+                        <i class="devicon-jquery-plain"></i>
+                            <p class="text-center">Jquery</p>
+
+                        </div>
+                        <div id='bootstrap'>
+                        <i class="devicon-bootstrap-plain"></i>
+                            <p class="text-center">Bootstrap</p>
+
+                        </div>
+                        <div id='mysql'>
+                            <i class="devicon-mysql-plain"></i>
+                            <p class="text-center">Mysql</p>
+
+                        </div>
+                        <div id='mongodb'>
+                        <i class="devicon-mongodb-plain"></i>
+                            <p class="text-center">MongoDB</p>
+
+                        </div>
+
+                    </row>
+                </div>
             </div>
         );
     }

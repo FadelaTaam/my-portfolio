@@ -22,14 +22,9 @@ class contact extends Component {
                         <div className="col-md-3">
                             <div className="contact-info">
                                 <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
-                                <h4>Contacter Moi</h4>
-                                <h4>......</h4>
+                                <h3>Contacter Moi pour plus d'informations</h3>
                             </div>
-                            <div id='contactIcon'>
-                                <i class="devicon-github-original"></i>
-                                <Icon id='linkedin' icon={linkedinIcon} />
-                                <Icon id='email' icon={baselineAlternateEmail} />
-                            </div>
+                            
                         </div>
                         <div className="col-md-9">
                             <div className="contact-form">
@@ -59,7 +54,7 @@ class contact extends Component {
                                 </div>
                                 <div className="form-group">
                                     <div className="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" className="btn btn-default">Envoyer</button>
+                                        <button type="submit" variant="dark">Envoyer</button>
                                     </div>
                                 </div>
                             </div>

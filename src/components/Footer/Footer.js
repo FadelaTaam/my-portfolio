@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Link } from "react-router-dom";
 // npm install --save-dev @iconify/react @iconify-icons/icon-park
 import { Icon} from '@iconify/react';
 // npm install --save-dev @iconify/react @iconify-icons/simple-icons
@@ -14,21 +13,26 @@ class contact extends Component {
     render() {
         return (
             <div id='Footer'>
-                <row>
-                    <h4>CONTACT</h4>
+                <div>
+                <h4>CONTACT</h4>
+                <h4>----------</h4>
+                </div>
+                <div>
+                <row id='Footer'>
                     <div>
-                        <i class="devicon-github-original"></i>
-                        <li><Link to="https://github.com/FadelaTaam">Github</Link></li>
+                    <span id='github' class="iconify" data-icon="codicon:github"></span>
+                        <li><a href="https://github.com/FadelaTaam" target="_blank">Github</a></li>
                     </div>
                     <div>
                         <Icon id='linkedin' icon={linkedinIcon} />
-                        <li><Link to="https://linkedin.com/in/fadela-taam-447444135">Linkedin</Link></li>
+                        <li><a href="https://linkedin.com/in/fadela-taam-447444135"target="_blank">Linkedin</a></li>
                     </div>
                     <div>
                         <Icon id='email' icon={baselineAlternateEmail} />
-                        <li><Link to="/contact">Email</Link></li>
+                        <li><a href="/contact" target="_blank">Email</a></li>
                     </div>
                 </row>
+                </div>
             </div>
         );
     }

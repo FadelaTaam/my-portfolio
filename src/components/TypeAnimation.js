@@ -12,13 +12,13 @@ class   Animation extends Component {
               {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={['Coder', "L'art", 'Lire', 'Voyager']}
-                loop={18}
+                loop={400}
                 cursor
                 cursorStyle='_'
                 typeSpeed={70}
                 deleteSpeed={50}
                 delaySpeed={1000}
-                onLoopDone={() => console.log(`Done after 18 loops!`)}
+                onLoopDone={() => console.log(`Done after 400 loops!`)}
               />
             </span>
           </h5>

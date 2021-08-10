@@ -1,5 +1,5 @@
 import './App.css';
-import React from "react";
+import React, { useCallback, useState} from "react";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -17,7 +17,7 @@ import TypeAnimation from './components/TypeAnimation.js'
 import ReactCountryFlag from "react-country-flag"
 
 import { useTranslation } from 'react-i18next';
-
+import { ThemeContext, themes } from './components/Button/ThemeContext'
 
 
 function App() {
@@ -26,8 +26,14 @@ function App() {
   const handleclick = lang => {
     i18n.changeLanguage(lang)
   }
+  const [theme, setTheme] = useState(themes.light)
+  const toggleTheme = useCallback(() => {
+    setTheme(theme === themes.dark ? themes.light : themes.dark)
+  }, [setTheme, theme])
 
   return (
+    <ThemeContext.Provider value={theme}>
+      <div style={{ ...theme }}>
     <BrowserRouter>
       <header>
         <GithubCorner href="https://github.com/FadelaTaam/" />
@@ -72,12 +78,9 @@ function App() {
           <div class='title-container'>
             <Typo></Typo>
           </div>
-
         </div>
-        <ButtonDark id='button-switch'></ButtonDark>
-        <div class="col-md-12 mx-auto text-center language">
-
-        </div>
+        <ButtonDark onClick={toggleTheme} id='button-switch'></ButtonDark>
+     
       </header>
 
       <div>
@@ -119,6 +122,8 @@ function App() {
       <Footer></Footer>
 
     </BrowserRouter>
+    </div>
+    </ThemeContext.Provider>
   );
 
 }
