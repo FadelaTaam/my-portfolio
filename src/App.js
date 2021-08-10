@@ -16,89 +16,111 @@ import GithubCorner from 'react-github-corner';
 import TypeAnimation from './components/TypeAnimation.js'
 import ReactCountryFlag from "react-country-flag"
 
-class App extends React.Component {
-  
-  render() {
-    return (
-      <BrowserRouter>
-        <header>
-          <GithubCorner href="https://github.com/FadelaTaam/" />
-          
-          <div id="flags">
-           
-            <ReactCountryFlag
-                countryCode="FR"
-                svg
-                style={{
-                    width: '2em',
-                    height: '2em',
-                }}
-                title="Français"
-            />
-            <ReactCountryFlag
-                countryCode="GB"
-                svg
-                style={{
-                    width: '2em',
-                    height: '2em',
-                }}
-                title="English"
-            />
+import { useTranslation } from 'react-i18next';
+
+
+
+function App() {
+  const { t, i18n } = useTranslation();
+
+  const handleclick = lang => {
+i18n.changeLanguage(lang)
+  }
+
+  return (
+    <BrowserRouter>
+      <header>
+        <GithubCorner href="https://github.com/FadelaTaam/" />
+
+        <div id="flags">
+
+          <ReactCountryFlag
+            countryCode="FR"
+            svg
+            style={{
+              width: '2em',
+              height: '2em',
+            }}
+            title="Français"
+          />
+          <ReactCountryFlag
+            countryCode="GB"
+            svg
+            style={{
+              width: '2em',
+              height: '2em',
+            }}
+            title="English"
+          />
+
+<p>
+  {t("header.0")}
+</p>
+<button onClick={() => handleclick('fr')}>Français</button>
+<button onClick={() => handleclick('en')}>English</button>
+
+
         </div>
-          <div> 
-          <span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150"></span>
-            <h1 class="mb-0">
-              <p> Taam Fadela
-              </p>
-            </h1>
-            <div class='title-container'>
-              <Typo></Typo>
-            </div>
 
-          </div>
-          <ButtonDark id='button-switch'></ButtonDark>
-          <div class="col-md-12 mx-auto text-center language">
-
-          </div>
-        </header>
 
         <div>
-          <nav >
-            <ul>
-              <li ><Link id="navText" to="/">Accueil</Link></li>
-              <li ><Link id="navText" to="/contact">Contact</Link></li>
-            </ul>
-          </nav>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
+          {/*<span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150"></span>*/}
+          <h1 class="mb-0">
+            <p> Taam Fadela
+            </p>
+          </h1>
+          <div class='title-container'>
+            <Typo></Typo>
+          </div>
 
         </div>
+        <ButtonDark id='button-switch'></ButtonDark>
+        <div class="col-md-12 mx-auto text-center language">
+
+        </div>
+      </header>
+
+      <div>
+        <nav >
+          <ul>
+            <li ><Link id="navText" to="/">Accueil</Link></li>
+            <li ><Link id="navText" to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+
+      </div>
 
 
-        <section id='about'>
-           <div className='col-md12'>
-           <div className ='row center mx-auto mb-5'>
-             <Polaroid></Polaroid>
-           </div>
-           <div className='col-md-8 center'>
+      <section id='about'>
+        <div className='col-md12'>
+          <div className='row center mx-auto mb-5'>
+            <Polaroid></Polaroid>
+          </div>
+          <div className='col-md-8 center'>
             <About></About>
-            </div>
-            </div>
-            
-        </section>
-
-        <Projets></Projets>
-        <Skills></Skills>
-        <Experiences></Experiences>
-        <div id='TypeAnimation'>
-        <TypeAnimation></TypeAnimation>
+          </div>
         </div>
-        <Footer></Footer>
 
-      </BrowserRouter>
-    );
-  }
+      </section>
+
+      <Projets></Projets>
+      <Skills>
+      <p>
+  {t("skills.0")}
+</p>
+      </Skills>
+      <Experiences></Experiences>
+      <div id='TypeAnimation'>
+        <TypeAnimation></TypeAnimation>
+      </div>
+      <Footer></Footer>
+
+    </BrowserRouter>
+  );
+
 }
 export default App;
