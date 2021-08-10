@@ -6,11 +6,12 @@ export default () => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
 
   const [theme, setTheme] = useState(themes.light)
+
   const toggleTheme = useCallback(() => {
     setTheme(theme === themes.dark ? themes.light : themes.dark)
   }, [setTheme, theme])
 
-  return (<ThemeContext.Provider value={theme}>
+  return (<ThemeContext.Provider theme={theme=== theme.light ? theme.light : theme.dark}>
 
     <DarkModeToggle
       onChange={setIsDarkMode}
