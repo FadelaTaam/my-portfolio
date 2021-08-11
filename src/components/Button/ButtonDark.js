@@ -4,7 +4,6 @@ import DarkModeToggle from "react-dark-mode-toggle";
 
 export default () => {
   const [isDarkMode, setIsDarkMode] = useState(() => false);
-
   return (
     <DarkModeToggle
       onChange={setIsDarkMode}
@@ -12,7 +11,5 @@ export default () => {
       size={80}
       background-color={'black'}
     />
-
-
   );
 };

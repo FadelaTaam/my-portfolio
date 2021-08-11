@@ -7,8 +7,8 @@ import StarIcon from '@material-ui/icons/Star'
 
 class Experiences extends Component {
     render() {
-        return (<section>
-            <h3>EXPERIENCES</h3>
+        return (<section id='experience'>
+            <h4>EXPERIENCES</h4>
             <VerticalTimeline>
                 <VerticalTimelineElement
                     iconStyle={{ background: 'black', color: '#fff' }}

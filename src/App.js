@@ -10,7 +10,7 @@ import Experiences from './components/Experiences';
 import Footer from './components/Footer/Footer';
 import ButtonDark from './components/Button/ButtonDark';
 import Polaroid from './components/polaroid'
-import Typo from './components/Typography';
+import TextAnimate from './components/TextAnimate'
 
 import GithubCorner from 'react-github-corner';
 import TypeAnimation from './components/TypeAnimation.js'
@@ -18,7 +18,7 @@ import ReactCountryFlag from "react-country-flag"
 
 import { useTranslation } from 'react-i18next';
 import { ThemeContext, themes } from './components/Button/ThemeContext'
-
+import DarkModeToggle from "react-dark-mode-toggle";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -26,17 +26,13 @@ function App() {
   const handleclick = lang => {
     i18n.changeLanguage(lang)
   }
-  const [theme, setTheme] = useState(themes.light)
-  const toggleTheme = useCallback(() => {
-    setTheme(theme === themes.dark ? themes.light : themes.dark)
-  }, [setTheme, theme])
-
+ 
   return (
-    <ThemeContext.Provider value={theme}>
-      <div style={{ ...theme }}>
+    <ThemeContext.Provider value={themes}>
+      <div style={{ ...themes }}>
         <BrowserRouter>
           <header>
-            <GithubCorner href="https://github.com/FadelaTaam/" />
+            <GithubCorner href="https://github.com/FadelaTaam/portfolio-fadela-taam" />
 
             <div id="flags">
 
@@ -70,16 +66,16 @@ function App() {
 
 
             <div>
-              <span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150"></span>
+            <span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150" color="black"></span>
               <h1 class="mb-0">
                 <p> Taam Fadela
                 </p>
               </h1>
               <div class='title-container'>
-                <Typo></Typo>
+                <TextAnimate></TextAnimate>
               </div>
             </div>
-            <ButtonDark onClick={toggleTheme} id='button-switch'></ButtonDark>
+            <ButtonDark id='button-switch'></ButtonDark>
 
           </header>
 

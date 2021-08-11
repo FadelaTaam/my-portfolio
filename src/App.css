@@ -5,6 +5,7 @@ header{
   background-color: #efe1bd;
   background-size: cover;
   text-align: center;
+  color: #333;
 }
 body {
   margin: 0;
@@ -60,10 +61,14 @@ div#flags {
   justify-content:left;
   padding-left: 30px;
 }
+div.title-container {
+  font-size: 200%;
+}
 Button.switch {
   background: black
   
 }
+
 .font-trebuchet {
 	font-family:  "monoton";
 }
@@ -71,6 +76,7 @@ section#about {
   background-color: white;
 
 }
+
 div.col-md12 {
   display: flex;
     justify-content: center;
@@ -88,6 +94,7 @@ div.card {
   background-color: #fff;
   position: relative;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  color:#333
 }
 svg#github.iconify.iconify--codicon {
   height: 50px;
@@ -156,13 +163,6 @@ div.polaroid {
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-}
-div#popAbout {
-  
-  padding-bottom: 50px;
-  padding-top: 50px;
-  display: flex;
-  justify-content: flex-start;
 }
 div#skills{
   
@@ -296,6 +296,9 @@ row#Footer>div {
   margin-left: 10px;
   margin-right: 10px;
 }
+section#experience {
+  color: #333;
+}
 div#TypeAnimation {
   display: flex;
   justify-content: center;
@@ -308,23 +311,26 @@ div#TypeAnimation {
   overflow: hidden;
   padding-bottom: 10%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  color: #333;
 }
 h1 {
   font-size: 250%;
   font-weight: 800;
   font-family: "monoton";
   width: 100%;
+  color: #333;
   
 }
 h2 {
   font-family: 'Courier New';
-    font-size: 100%;
+    color: #333;
     
 }
 h3 {
   font-family:'Courier New', Courier, monospace;
   font-size:xx-large;
   text-align: center;
+  color: #333;
 }
 h4 {
   font-family:'Courier New', Courier, monospace;
@@ -354,7 +360,7 @@ body.dark-mode {
 
 
 @media (min-width: 768px) {
-  .container {
+  .body {
     margin: 200px;
   }
 }
