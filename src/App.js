@@ -16,26 +16,29 @@ import GithubCorner from 'react-github-corner';
 import TypeAnimation from './components/TypeAnimation.js'
 import ReactCountryFlag from "react-country-flag"
 
+import { MultiLang, Determinator } from "react-multi-language";
 import { useTranslation } from 'react-i18next';
 import { ThemeContext, themes } from './components/Button/ThemeContext'
 import DarkModeToggle from "react-dark-mode-toggle";
 
+import Achievements from './components/Achievements';
+import Login from './components/Auth/Login';
+
 function App() {
   const { t, i18n } = useTranslation();
+
 
   const handleclick = lang => {
     i18n.changeLanguage(lang)
   }
- 
+  
   return (
     <ThemeContext.Provider value={themes}>
       <div style={{ ...themes }}>
         <BrowserRouter>
           <header>
             <GithubCorner href="https://github.com/FadelaTaam/portfolio-fadela-taam" />
-
             <div id="flags">
-
               <ReactCountryFlag
                 countryCode="FR"
                 svg
@@ -54,17 +57,12 @@ function App() {
                 }}
                 title="English"
               />
-
               <p>
                 {t("header.0")}
               </p>
               <button onClick={() => handleclick('fr')}>Français</button>
               <button onClick={() => handleclick('en')}>English</button>
-
-
             </div>
-
-
             <div>
             <span class="iconify" data-icon="la:laptop-code" data-width="150" data-height="150" color="black"></span>
               <h1 class="mb-0">
@@ -76,23 +74,22 @@ function App() {
               </div>
             </div>
             <ButtonDark id='button-switch'></ButtonDark>
-
           </header>
-
           <div>
             <nav >
               <ul id='nav'>
                 <li ><Link id="navText" to="/">Accueil</Link></li>
                 <li ><Link id="navText" to="/contact">Contact</Link></li>
+                <li ><Link id="navText" to="/api/login">Login</Link></li>
               </ul>
             </nav>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/contact" component={Contact} />
+              <Route path="/achievements" component={Achievements} />
+              <Route path="/api/login" component={Login} />
             </Switch>
-
           </div>
-
 
           <section id='about'>
             <div className='col-md12'>
